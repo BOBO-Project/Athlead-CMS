@@ -4,9 +4,10 @@ import "antd/dist/antd.css";
 
 import loginPage from "./login-page";
 import userPage from "./user-page";
+import partnersPage from "./partners-page";
 import MainLayout from "../layout/mainLayout";
 
-const appRoutes = [{ ...loginPage }, { ...userPage }];
+const appRoutes = [{ ...loginPage }, { ...userPage }, { ...partnersPage }];
 
 const RenderRoutes = () => (
   <Routes>

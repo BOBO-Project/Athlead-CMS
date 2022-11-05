@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Breadcrumb, Layout, Menu, Typography } from "antd";
-import { UserOutlined, LogoutOutlined } from "@ant-design/icons";
+import {
+  UserOutlined,
+  LogoutOutlined,
+  UnorderedListOutlined,
+} from "@ant-design/icons";
 import useLocalStorage from "../hooks/useLocalStorage";
 import { STORAGE_KEY, WEB_PATH } from "../constants";
 import LOGO from "../logo.svg";
@@ -20,6 +24,7 @@ const getItem = (label, key, icon, children) => {
 
 const items = [
   getItem("User", "user", <UserOutlined />),
+  getItem("Partner", "partner", <UnorderedListOutlined />),
   getItem("Logout", "logout", <LogoutOutlined />),
 ];
 
