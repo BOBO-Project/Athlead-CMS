@@ -4,7 +4,7 @@ export const WEB_PATH = {
   partner: "/partner",
 };
 
-export const BASE_URL = "http://localhost:3000";
+export const BASE_URL = "https://athlead-be-production.up.railway.app";
 
 export const API_URL = {
   login: BASE_URL + "/auth/login",
